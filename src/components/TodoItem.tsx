@@ -1,9 +1,9 @@
-import React from "react";
-import { Todo } from "../types/Todo";
+import React from 'react';
+import { Todo } from '../types/Todo';
 
 type Props = {
   todo: Todo;
-}
+};
 
 export const TodoItem: React.FC<Props> = ({ todo }) => (
   <div data-cy="Todo" className={`todo ${todo.completed ? 'completed' : ''}`}>

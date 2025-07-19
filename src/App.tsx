@@ -35,7 +35,7 @@ export const App: React.FC = () => {
 
     const timer = setTimeout(() => setError(''), 3000);
 
-    return () => clearTimeout;
+    return () => clearTimeout(timer);
   }, [error]);
 
   const filteredTodos = todos.filter(todo => {
